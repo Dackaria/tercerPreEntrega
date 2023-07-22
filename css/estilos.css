@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+nav {
+  background-color: aqua;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li a {
+  color: white;
+}
+nav ul li :hover {
+  color: chocolate;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+main h1 {
+  margin-bottom: 30px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+main h1:hover {
+  color: #ff6600;
+  transform: scale(1.2);
+}
+
+.presentacion {
+  text-align: center;
+  margin: 20px;
+}
+
+.promo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.promo .card {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 10px;
+}
+@media screen and (max-width: 600px) {
+  .promo .card {
+    width: 100%;
+  }
+}
+
+form {
+  margin: 20px 0 0 0;
+}
+form button {
+  float: right;
+}
+
+footer {
+  display: flex;
+  background-color: rgb(238, 236, 236);
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  padding: 10px;
+  margin-top: auto;
+}
+
+/*# sourceMappingURL=estilos.css.map */
