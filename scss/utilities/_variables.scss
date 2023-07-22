@@ -1,0 +1,21 @@
+//variable
+$color-amigo: #ff6600;
+
+//extend
+.gradete { 
+    
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+};
+
+//mapa
+$fuentes: (
+  titulo: ('Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif),
+  subtitulo: ('Courier New', Courier, monospace),
+  cuerpo: ('Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif)
+);
+
+//mixin
+@mixin borde {
+    border: 2px solid #ccc;
+}

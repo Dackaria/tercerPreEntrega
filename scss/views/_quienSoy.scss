@@ -1,0 +1,22 @@
+.presentacion{
+    font-family: map-get($fuentes, cuerpo);
+    text-align:center ;
+    margin: 20px;
+}
+@keyframes titilar {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .titulo-titilante {
+    color: $color-amigo;
+    animation: titilar 1s infinite; /* Aplicamos la animación de parpadeo */
+  }
+  

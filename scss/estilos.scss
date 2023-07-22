@@ -1,87 +1,16 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import "./utilities/variables";
+@import "./globals/reset";
+@import "./layout/nav";
+@import "./layout/footer";
+@import "./views/index";
+@import "./views/quienSoy";
+@import "./views/precios";
+@import "./views/testimonios";
+@import "./views/contacto";
 
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-   min-height: 100vh;
-   }
-nav {
-    background-color: aqua;
-    ul{
-        list-style: none;
-        li{
-           
-            a{
-                color: white;
-            }
-            :hover{
-                color:chocolate
-            }
-        }
-    }
 
-}
-main {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    h1{
-        margin-bottom: 30px;
-        display: inline-block; // Para que la animación se aplique correctamente
-        transition: all 0.3s ease; // Transición suave de 0.3 segundos
-        cursor: pointer; // Cambia el cursor a una mano cuando pases sobre el texto
-      }
-      h1:hover {
-        color: #ff6600; 
-        transform: scale(1.2); // Aumenta el tamaño del texto al pasar el cursor sobre él
-      }
-}
-//quien soy
-.presentacion{
-    text-align:center ;
-    margin: 20px;
-}
-// Estilos generales de las tarjetas
-.promo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-    .card {
-      width: 400px; // Ancho deseado para las tarjetas en pantallas grandes
-      padding: 20px;
-      border: 1px solid #ccc;
-      margin: 10px;
-      
-      // Estilos para pantallas pequeñas
-      @media screen and (max-width: 600px) {
-        width: 100%; // Ajustar el ancho al 100% en pantallas pequeñas
-      }
-    }
-  }
+
+ 
+  
   
 
-  //contacto
-  form {
-    margin: 20px 0 0 0;
-    button{
-        float: right;
-    }
-  }
-  
-footer {
-    display: flex;
-    background-color: rgb(238, 236, 236);
-    justify-content: center;
-    align-items: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
-    padding: 10px;
-    margin-top: auto;
-}

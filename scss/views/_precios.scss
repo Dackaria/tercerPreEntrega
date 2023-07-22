@@ -1,0 +1,20 @@
+.promo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    .card {
+      @include borde;
+      width: 400px; 
+      margin: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      
+      // Estilos para pantallas pequeñas
+      @media screen and (max-width: 600px) {
+        width: 100%; 
+      }
+    }
+}
+ 
+  
+  

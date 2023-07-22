@@ -1,0 +1,9 @@
+.card {
+    @include borde; 
+    margin-top: 10px;   
+}
+
+.card-header {
+    background: #f2f3f5;
+   
+}

@@ -1,3 +1,9 @@
+@charset "UTF-8";
+.gradete, footer, nav {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,17 +17,28 @@ body {
   min-height: 100vh;
 }
 
-nav {
-  background-color: aqua;
+nav a {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 nav ul {
   list-style: none;
 }
 nav ul li a {
-  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-nav ul li :hover {
-  color: chocolate;
+nav ul li a a:hover {
+  color: #ff6600;
+  transform: scale(1.2);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  padding: 10px;
+  margin-top: auto;
 }
 
 main {
@@ -42,8 +59,25 @@ main h1:hover {
 }
 
 .presentacion {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
   margin: 20px;
+}
+
+@keyframes titilar {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.titulo-titilante {
+  color: #ff6600;
+  animation: titilar 1s infinite; /* Aplicamos la animación de parpadeo */
 }
 
 .promo {
@@ -52,10 +86,10 @@ main h1:hover {
   justify-content: space-between;
 }
 .promo .card {
+  border: 2px solid #ccc;
   width: 400px;
-  padding: 20px;
-  border: 1px solid #ccc;
   margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 @media screen and (max-width: 600px) {
   .promo .card {
@@ -63,22 +97,34 @@ main h1:hover {
   }
 }
 
+.card {
+  border: 2px solid #ccc;
+  margin-top: 10px;
+}
+
+.card-header {
+  background: #f2f3f5;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.formulario {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+}
+
 form {
-  margin: 20px 0 0 0;
+  margin: 100px 0 0 0;
 }
 form button {
   float: right;
-}
-
-footer {
-  display: flex;
-  background-color: rgb(238, 236, 236);
-  justify-content: center;
-  align-items: center;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 1rem;
-  padding: 10px;
-  margin-top: auto;
 }
 
 /*# sourceMappingURL=estilos.css.map */

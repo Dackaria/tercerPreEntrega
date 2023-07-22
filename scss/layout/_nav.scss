@@ -1,0 +1,26 @@
+nav {
+    @extend .gradete;
+    a {
+        font-family: map-get($fuentes, titulo); 
+    }
+    ul {
+        list-style: none;
+
+        li { 
+          
+           
+            a {
+                font-family: map-get($fuentes, titulo);
+              
+                a:hover {
+
+                    color: $color-amigo;
+                    transform: scale(1.2);
+
+                }
+            }
+           
+        }
+    }
+
+}
