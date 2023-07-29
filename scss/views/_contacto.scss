@@ -1,12 +1,12 @@
 .container {
     display: flex;
-    justify-content: center; // Centrar horizontalmente
-    align-items: center; // Centrar verticalmente
-    height: 100vh; // Altura del contenedor para que ocupe todo el alto de la pantalla
+    justify-content: center;
+    align-items: center; 
+   
   }
   
   .formulario {
-    width: 400px; // Puedes ajustar el ancho del formulario según tus necesidades
+    width: 400px; 
     padding: 20px;
     border: 1px solid #ccc;
     background-color: #f7f7f7;
@@ -18,3 +18,22 @@ form {
         float: right;
     }
   }
+
+  section {
+    margin-top: 50px;
+    display: flex;
+    @extend .gradete;
+    width: 400px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    img {
+        width: $ancho-imagen-svg;
+        height: $alto-imagen-svg;
+        transition: transform $duracion-animacion ease-in-out;
+    }
+    img:hover {
+        transform: rotate($angulo-final * 1deg); // Multiplicamos por 1deg para convertir el ángulo a grados
+      }
+}

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.gradete, footer, nav {
+.gradete, section, footer, nav {
   background: rgb(238, 174, 202);
   background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
 }
@@ -110,7 +110,6 @@ main h1:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .formulario {
@@ -125,6 +124,24 @@ form {
 }
 form button {
   float: right;
+}
+
+section {
+  margin-top: 50px;
+  display: flex;
+  width: 400px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+section img {
+  width: 40px;
+  height: 40px;
+  transition: transform 1s ease-in-out;
+}
+section img:hover {
+  transform: rotate(360deg);
 }
 
 /*# sourceMappingURL=estilos.css.map */
